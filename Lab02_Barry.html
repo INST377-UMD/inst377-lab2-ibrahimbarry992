@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Contact Form Lab 02</title>
+        <style>
+            body {
+                background-color: rgb(249, 229, 77);
+            }
+            .theOffice {
+                margin-bottom: 45;
+                margin-right: 32;
+                margin-left: 15;
+                color: blueviolet;
+                font-size: 20;
+
+            }
+            .submit-btn {
+                background-color: blue;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .submit-btn:hover {
+                background-color: darkblue;
+            }
+
+            
+        </style>
+        <body>
+            <h1> Hey You! Contact Me! INST377 - Lab 2</h1>
+
+            <h2>Section 1</h2>
+            
+            <form name= "contactForm" method="get" action="Lab02_BarrySuccess.html">
+                <!-- Name Info -->
+                <label for="fullName">Enter your full name please: </label>
+                <input type="text" id="fullName" placeholder="Michael Gary Scott" required>
+                <br>
+                <br>
+                <!-- Email Info -->
+                <label for="email">Enter your email: </label>
+                <input type="email" id="email" placeholder="mgs@dundermifflin.com" required>
+                <br>
+                <hr>
+                <!-- Favorite Character List -->
+                
+                <div class="theOffice">
+                    <label for="character">Who is your favorite The Office character?</label>
+                        <select id="officeChar" name="officeChar" required>
+                         <option hidden disabled selected>-- Select Option --</option>
+                            <option value="michael">Michael</option>
+                            <option value="jim">Jim</option>
+                            <option value="dwight">Dwight</option>
+                            <option value="pam">Pam</option>
+                            <option value="ryan">Ryan</option>
+                            <option value="other">Other</option>
+                        </select>
+                
+                <br>
+                <br>
+                <!-- Least Favorite Character List -->
+                
+                <label for="character">Who is your least favorite The Office character?</label>
+                <select id="officeChar" name="officeChar" required>
+                    <option hidden disabled selected>-- Select Option --</option>
+                    <option value="michael">Michael</option>
+                    <option value="jim">Jim</option>
+                    <option value="dwight">Dwight</option>
+                    <option value="pam">Pam</option>
+                    <option value="ryan">Ryan</option>
+                    <option value="other">Other</option>
+                </select>
+                </div>
+                <br>
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </body>
+    </head>
+</html>
